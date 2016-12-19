@@ -255,8 +255,8 @@
 			_react2.default.createElement(_reactRouter.IndexRoute, { component: Home }),
 			_react2.default.createElement(
 				_reactRouter.Route,
-				{ path: 'tv-shows/shows', component: _Shows2.default },
-				_react2.default.createElement(_reactRouter.Route, { path: 'tv-shows/shows/:showId', component: _Show2.default })
+				{ path: '/tv-shows/shows', component: _Shows2.default },
+				_react2.default.createElement(_reactRouter.Route, { path: '/tv-shows/shows/:showId', component: _Show2.default })
 			)
 		)
 	), document.getElementById('application'));
@@ -37299,7 +37299,7 @@
 	
 				return _react2.default.createElement(
 					_reactRouter.Link,
-					{ to: 'shows/' + this.props.itemData.id, className: 'search-result' },
+					{ to: '/tv-shows/shows/' + this.props.itemData.id, className: 'search-result' },
 					_react2.default.createElement('div', { className: 'search-result--show-image', style: style }),
 					_react2.default.createElement(
 						'div',
